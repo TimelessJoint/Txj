@@ -1,7 +1,7 @@
 const products=[
-{id:1,name:"TXJ NIOR TEE",type:"Black / Core",price:15,image:"assets/black-shirt.jpg",desc:"A clean everyday silhouette with the TXJ mark. Easy fit, understated attitude.",sizes:["XS","S","M","L","XL","XXL"]},
-{id:2,name:"TXJ BLANCH TEE",type:"White / Core",price:15,image:"assets/blue-shirt.jpg",desc:"A clean plain white tee with the signature TXJ mark and an effortless everyday fit.",sizes:["XS","S","M","L","XL","XXL"]},
-{id:3,name:"TXJ BACK ART TEE",type:"White / Statement",price:15,image:"assets/graphic-shirt.jpg",desc:"Our statement graphic tee with a larger back artwork, clean front identity and a stronger presence.",sizes:["XS","S","M","L","XL","XXL"]}
+{id:1,name:"TXJ NIOR TEE",type:"Black / Core",price:15,image:"assets/black-shirt.jpg",desc:"A clean everyday silhouette with the TXJ mark. Easy fit, understated attitude.",sizes:["S","M","L","XL","XXL","XXXL"]},
+{id:2,name:"TXJ BLANCH TEE",type:"White / Core",price:15,image:"assets/blue-shirt.jpg",desc:"A clean plain white tee with the signature TXJ mark and an effortless everyday fit.",sizes:["S","M","L","XL","XXL","XXXL"]},
+{id:3,name:"TXJ BACK ART TEE",type:"White / Statement",price:15,image:"assets/graphic-shirt.jpg",desc:"Our statement graphic tee with a larger back artwork, clean front identity and a stronger presence.",sizes:["S","M","L","XL","XXL","XXXL"]}
 ];
 let cart=JSON.parse(localStorage.getItem("txdCart")||"[]"), currentProduct=null, selectedSize="M";
 const $=s=>document.querySelector(s);
