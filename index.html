@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TXJ / TIMELESS JOINT — modern shirts with timeless, clean fits and unmistakable attitude.">
+<meta name="theme-color" content="#090909">
+<title>TXJ / TIMELESS JOINT — Everyday, Elevated.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader" class="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-mark"><img src="assets/logo.jpg" alt="TXJ / TIMELESS JOINT"></div>
+    <div class="loader-word">TXJ / TIMELESS JOINT</div>
+    <div class="loader-line"><span></span></div>
+    <small>LOADING COLLECTION</small>
+  </div>
+</div>
+
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="TXJ / TIMELESS JOINT home"><img src="assets/logo.jpg" alt="TXJ / TIMELESS JOINT logo"></a>
+  <nav class="desktop-nav">
+    <a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+    <button class="cart-btn" id="cartBtn" aria-label="Open shopping cart">Cart <span id="cartCount">0</span></button>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="eyebrow">TXJ / TIMELESS JOINT</p>
+    <h1>EVERYDAY,<br><em>ELEVATED.</em></h1>
+    <p class="hero-copy">Timeless, clean fits.<br>Built for the way you move.</p>
+    <a class="primary-btn" href="#shop">SHOP COLLECTION <span>↗</span></a>
+  </div>
+  <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+</section>
+
+<section id="shop" class="shop-section">
+  <div class="section-head">
+    <div><p class="eyebrow">THE CURRENT DROP</p><h2>COLLECTION <sup>03</sup></h2></div>
+    <p class="section-note">Three signatures. One identity.<br>Choose your colour.</p>
+  </div>
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<section class="statement">
+  <div class="statement-logo"><img src="assets/logo.jpg" alt=""></div>
+  <p>Designed to be noticed<br>without trying too hard.</p>
+</section>
+
+<section id="about" class="about">
+  <div class="about-image"><img src="assets/about.jpg" alt="TXJ / TIMELESS JOINT shirt editorial"></div>
+  <div class="about-copy">
+    <p class="eyebrow">THE BRAND</p>
+    <h2>LESS NOISE.<br><em>MORE PRESENCE.</em></h2>
+    <p>TXJ is a modern brand focused on Timeless, Clean fits and pieces that work beyond one season. Every drop keeps the look simple and the attitude unmistakable.</p>
+    <a href="#shop" class="text-link">EXPLORE THE DROP <span>→</span></a>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div><p class="eyebrow">STAY IN THE LOOP</p><h2>NEW DROPS.<br>NO SPAM.</h2><div class="whatsapp-contact"><span>ORDER / ENQUIRE ON WHATSAPP</span><a href="https://wa.me/263714947114" target="_blank" rel="noopener">+263 71 494 7114 ↗</a><a href="https://wa.me/263776624153" target="_blank" rel="noopener">+263 776 624 153 ↗</a></div></div>
+  <form id="newsletter"><input type="email" placeholder="YOUR EMAIL ADDRESS" required><button type="submit">JOIN <span>→</span></button></form>
+</section>
+</main>
+
+<footer>
+  <div class="footer-top"><div class="footer-brand">TXJ</div><div><a href="#shop">Shop</a><a href="#about">About</a><a href="#contact">Contact</a></div><div><span>© 2026 TXJ / TIMELESS JOINT</span><span>BUILT FOR EVERYDAY</span></div></div>
+</footer>
+
+<div class="search-panel" id="searchPanel">
+  <div class="search-inner"><button class="close" id="closeSearch">×</button><p class="eyebrow">SEARCH THE COLLECTION</p><input id="searchInput" type="search" placeholder="Type a product name..."><div id="searchResults"></div></div>
+</div>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head"><div><p class="eyebrow">YOUR BAG</p><h3>SHOPPING CART</h3></div><button class="close" id="closeCart">×</button></div>
+  <div id="cartItems" class="cart-items"></div>
+  <div class="cart-empty" id="cartEmpty">Your cart is waiting.<br><a href="#shop" id="startShopping">SHOP THE COLLECTION →</a></div>
+  <div class="cart-bottom" id="cartBottom">
+    <div class="total-row"><span>SUBTOTAL</span><strong id="cartTotal">$0</strong></div>
+    <p class="cart-note">Shipping and final delivery details can be confirmed at checkout.</p>
+    <button class="checkout-btn" id="checkoutBtn">CHECKOUT <span>→</span></button>
+  </div>
+</aside>
+
+<div class="modal" id="productModal">
+  <div class="modal-card">
+    <button class="close modal-close" id="closeModal">×</button>
+    <div class="modal-image"><img id="modalImg" src="" alt=""></div>
+    <div class="modal-info"><p class="eyebrow" id="modalTag"></p><h3 id="modalName"></h3><div class="modal-price" id="modalPrice"></div><p id="modalDesc"></p>
+      <div class="size-title">SELECT SIZE</div><div class="sizes" id="sizes"></div>
+      <button class="checkout-btn add-modal" id="modalAdd">ADD TO CART <span>+</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Added to cart</div>
+<script src="script.js"></script>
+</body>
+</html>
