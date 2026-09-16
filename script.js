@@ -9,7 +9,7 @@ const grid=$("#productGrid"), cartDrawer=$("#cartDrawer"), backdrop=$("#drawerBa
 function renderProducts(list=products){
  grid.innerHTML=list.map(p=>`<article class="product-card" data-id="${p.id}">
  <div class="product-image"><img src="${p.image}" alt="${p.name}" loading="lazy"><button class="quick-add" data-quick="${p.id}">QUICK ADD +</button></div>
- <div class="product-meta"><div><div class="product-name">${p.name}</div><div class="product-type">${p.type}</div></div><div class="product-sizes" aria-label="Available sizes">S · M · L · XL · XXL · XXXL</div><div class="product-price">$${p.price}</div></div>
+ <div class="product-meta"><div><div class="product-name">${p.name}</div><div class="product-type">${p.type}</div></div><div class="product-sizes" aria-label="Available sizes">S · M · L · XL · XXL · XXXL</div></div><div class="product-price">$${p.price}</div></div>
  </article>`).join("");
 }
 renderProducts();
