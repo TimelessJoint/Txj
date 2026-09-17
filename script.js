@@ -52,7 +52,7 @@ $("#checkoutBtn").onclick=()=>{
  const lines=cart.map(i=>{let p=products.find(x=>x.id===i.id);return `${p.name} | Size ${i.size} | Qty ${i.qty} | $${p.price*i.qty}`}).join("%0A");
  const total=cart.reduce((s,i)=>s+products.find(p=>p.id===i.id).price*i.qty,0);
  const msg=`Hello TXJ / TIMELESS JOINT, I'd like to place an order:%0A%0A${lines}%0A%0ATotal: $${total}%0A%0APlease confirm availability and delivery details.`;
- window.open(`https://wa.me/263714947114?text=${msg}`,"_blank");
+ window.open(`https://wa.me/263 776 624 153?text=${msg}`,"_blank");
 };
 $("#searchBtn").onclick=()=>{$("#searchPanel").classList.add("open");$("#searchInput").focus();document.body.classList.add("lock")};
 $("#closeSearch").onclick=()=>{$("#searchPanel").classList.remove("open");document.body.classList.remove("lock")};
